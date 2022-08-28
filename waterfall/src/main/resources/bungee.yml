@@ -1,0 +1,4 @@
+name: NetworkSync
+version: '${project.version}'
+main: me.samcefalo.networksync.NetworkSync
+description: Sync multiple paper servers with Redis

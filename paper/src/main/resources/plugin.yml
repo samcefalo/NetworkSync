@@ -1,0 +1,6 @@
+name: NetworkSync
+version: '${project.version}'
+main: me.samcefalo.networksync.NetworkSync
+api-version: 1.19
+authors: [ samcefalo ]
+description: Sync multiple paper servers with Redis
