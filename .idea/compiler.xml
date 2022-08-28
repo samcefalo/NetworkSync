@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api" />
       </profile>
       <profile name="Annotation profile for NetworkSync" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -16,7 +17,6 @@
         </processorPath>
         <module name="paper" />
         <module name="waterfall" />
-        <module name="api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
