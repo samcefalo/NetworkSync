@@ -1,4 +1,4 @@
-package me.samcefalo.netoworksync.api.redis;
+package me.samcefalo.networksync.api.redis;
 
 import lombok.Getter;
 import redis.clients.jedis.JedisPooled;

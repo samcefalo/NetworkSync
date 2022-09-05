@@ -1,4 +1,4 @@
-package me.samcefalo.netoworksync.api.redis;
+package me.samcefalo.networksync.api.redis;
 
 import redis.clients.jedis.JedisPubSub;
 
@@ -13,7 +13,7 @@ public class RedisExecutor {
     //run & block another Thread
     public void subscribe(String channel, JedisPubSub jedisPubSub) {
         new Thread(() -> {
-            this.redisProvider.getJedisPooled().subscribe(jedisPubSub, "test");
+            this.redisProvider.getJedisPooled().subscribe(jedisPubSub, channel);
         }).start();
     }
 

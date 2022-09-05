@@ -1,10 +1,10 @@
 package me.samcefalo.networksync;
 
-import me.samcefalo.netoworksync.api.redis.RedisExecutor;
+import me.samcefalo.networksync.api.redis.RedisExecutor;
 import me.samcefalo.networksync.redis.listeners.TestChannelListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-import me.samcefalo.netoworksync.api.redis.RedisProvider;
+import me.samcefalo.networksync.api.redis.RedisProvider;
 
 public final class NetworkSync extends JavaPlugin {
 
@@ -21,7 +21,7 @@ public final class NetworkSync extends JavaPlugin {
         redisExecutor.subscribe("test", testChannel);
 
         Bukkit.getScheduler().runTaskLaterAsynchronously(this, () -> {
-            redisExecutor.publish("test", "enabling plugin..");
+            redisExecutor.publish("test", "another message");
             Bukkit.getConsoleSender().sendMessage("Message send.");
         }, 100);
 
