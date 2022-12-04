@@ -11,6 +11,7 @@ sudo apt-get install redis
 
 ### Connect
 sudo service redis-server start
+
 redis-cli 
 
 ## Redis pub/sub channels messages
